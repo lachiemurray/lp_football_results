@@ -14,7 +14,23 @@
     }
   </style>
 </head>
-<body>
-        <h1>{{ greeting }}</h1>
+<body>  
+
+<h1>{{ competition }}</h1>
+
+<table border=1px cellpadding=5px>
+{% for game in fixtures %}
+<tr>
+	<td>{{ game.status }}</td>
+	<td>{{ game.team_1 }}</td>
+	<td>{{ game.score_1 }}</td>
+	<td>{% if game.status %}-{% else %}v{% endif %}</td>
+	<td>{{ game.score_2 }}</td>
+	<td>{{ game.team_2 }}</td>
+	<td>{{ game.kick_off }}</td>
+</tr>
+{% endfor %}
+</table>
+
 </body>
 </html>

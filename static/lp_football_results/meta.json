@@ -1,51 +1,30 @@
 {
-    "owner_email" : "publishers@bergcloud.com",
+    "owner_email" : "lachie.murray@gmail.com",
     "publication_api_version":"1.0",
-    "name": "Hello, World!",
-    "description": "Example publication for Little Printer",
-    "delivered_on": "every Monday",
+    "name": "Football Results & Fixtures",
+    "description": "",
+    "delivered_on": "whenever there are games",
     "send_timezone_info": true,
     "send_delivery_count": false,
     "external_configuration": false,
     "config" : {
       "fields": [
           {
-              "type": "text",
-              "name": "name",
-              "label": "Enter your name"
-          },
-          {
               "type": "select",
-              "name": "lang",
-              "label": "Select your greeting language",
+              "name": "competition",
+              "label": "Select a competition",
               "options": [
                   [
-                      "English",
-                      "english"
+                      "English Premier League",
+                      "premier-league"
                   ],
                   [
-                      "French",
-                      "french"
+                      "FA Cup",
+                      "fa-cup"
                   ],
                   [
-                      "German",
-                      "german"
-                  ],
-                  [
-                      "Spanish",
-                      "spanish"
-                  ],
-                  [
-                      "Portuguese",
-                      "portuguese"
-                  ],
-                  [
-                      "Italian",
-                      "italian"
-                  ],
-                  [
-                      "Swedish",
-                      "swedish"
+                      "English League Cup",
+                      "league-cup"
                   ]
               ]
           }
